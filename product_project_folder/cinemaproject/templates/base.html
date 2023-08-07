@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=1380&t=st=1689602824~exp=1689603424~hmac=ea98fceeb0cb2d62631de9181219f725087f4c3844fa8d8382ada2a7a4972f9f');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<!-- Just an image -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    cinema
+  </a>
+    </a>
+  <a href="{% url 'cinemaapp:add_cinema' %}">
+    <button class="btn btn-sm btn-outline-secondary" type="button">Add movie</button>
+</a>
+
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>
